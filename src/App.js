@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import InfoSection from "./Info";
+import { homeObjOne } from "./Info/data";
+import GlobalStyle from "./global-style";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Nav";
+import ServicePage from "./components/Service/index";
+import { serviceObjOne } from "./components/Service/data";
+import About from "./components/About/About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Navbar />
+      <InfoSection {...homeObjOne} />
+      <h1
+        style={{
+          fontWeight: "bold",
+          color: "#3290d7",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        Service
+      </h1>
+      <ServicePage {...serviceObjOne} />
+
+      <About />
+      <Footer />
+    </>
   );
 }
 
