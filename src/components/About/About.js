@@ -22,12 +22,32 @@ const About = () => {
           <SubTitle>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
             corporis deserunt blanditiis pariatur, aut cum iusto dicta dolore
-            unde quasi voluptate ea dignissimos odit quos reprehenderit neque
-            fuga ullam ducimus.
           </SubTitle>
         </Header>
 
         <CardWrapper>
+          <CARD>
+            <ICON>
+              <BiPlusMedical size={"4rem"} color={"#3290d7"} />
+            </ICON>
+            <IconTitle> ARt hdusp </IconTitle>
+            <IconSubtitle>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              modi ipsam. Pariatur, sunt, culpa eaque at rem perspiciatis quo ex
+              reprehender.
+            </IconSubtitle>
+          </CARD>
+          <CARD>
+            <ICON>
+              <BiPlusMedical size={"4rem"} color={"#3290d7"} />
+            </ICON>
+            <IconTitle> ARt hdusp </IconTitle>
+            <IconSubtitle>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              modi ipsam. Pariatur, sunt, culpa eaque at rem perspiciatis quo ex
+              reprehender.
+            </IconSubtitle>
+          </CARD>
           <CARD>
             <ICON>
               <BiPlusMedical size={"4rem"} color={"#3290d7"} />

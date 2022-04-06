@@ -4,7 +4,10 @@ export const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex-direction: column;
 `;
 export const Header = styled.div`
@@ -12,11 +15,11 @@ export const Header = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 `;
 export const Title = styled.h1`
   display: flex;
-
+  padding-bottom: 2rem;
   justify-content: center;
   align-items: center;
 `;
@@ -42,8 +45,14 @@ export const CARD = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 300px;
   padding: 1rem;
+  border-radius: 3rem;
+  border: 1px solid #e6e6e6;
+  margin-right: 0.5rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `;
 export const ICON = styled.div`
   margin-bottom: 1rem;
@@ -60,4 +69,6 @@ export const IconSubtitle = styled.h4`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  text-align: center;
 `;

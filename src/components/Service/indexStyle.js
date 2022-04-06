@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #3290d7;
+  color: #2bfc7f;
   padding: 160px 0;
   background-color: #fff;
 `;

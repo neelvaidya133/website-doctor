@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const Nav = styled.div`
   height: 4rem;
   width: 100%;
-  background-color: #3290d7;
 
   a {
-    color: #fff;
+    color: #000;
   }
 `;
 export const NavElement = styled.div``;
@@ -46,7 +45,7 @@ export const Number = styled.div`
   justify-content: center;
   align-items: center;
   p {
-    color: #fff;
+    color: #000;
     padding-left: 1rem;
     margin: 0;
   }
@@ -69,4 +68,12 @@ export const HamBurgerMenu = styled.div`
     right: 0;
     transform: translate(-100%, 75%);
   }
+`;
+
+export const LogoWrapper = styled.div`
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
 `;

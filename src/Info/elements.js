@@ -1,7 +1,6 @@
 import styled from "styled-components";
-
 export const InfoContainer = styled.div`
-  color: #3290d7;
+  color: #2bfc7f;
   padding: 160px 0;
   background-color: #fff;
 `;
@@ -64,7 +63,7 @@ export const Subtitle = styled.h1`
 
 export const Button = styled.b`
   padding: 10px 15px 10px 15px;
-  background-color: #3290d7;
+  background-color: #2bfc7f;
   border-radius: 50px;
   color: #fff;
   align-items: center;

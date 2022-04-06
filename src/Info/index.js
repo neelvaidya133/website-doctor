@@ -1,4 +1,5 @@
 import React from "react";
+import BG from "../components/Assets/pexels-matheus-natan-3297593.jpg";
 import {
   InfoContainer,
   InfoWrapper,
@@ -23,7 +24,7 @@ const InfoSection = ({ img, start, imgStart, heading, subtittle }) => {
                 <Subtitle>{subtittle}</Subtitle>
 
                 <Button as="a" href="#">
-                  Get started
+                  Contact Us
                 </Button>
               </TextWrapper>
             </InfoColumn>

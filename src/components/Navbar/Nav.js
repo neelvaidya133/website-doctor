@@ -1,6 +1,8 @@
 import React from "react";
 import { IoMdCall } from "react-icons/io";
 import { GiHamburgerMenu as Ham } from "react-icons/gi";
+import { Link } from "react-scroll";
+import Logo from "../Assets/devetreeLogo.png";
 import {
   Nav,
   NavElement,
@@ -10,7 +12,9 @@ import {
   BUTTON,
   Number,
   HamBurgerMenu,
+  LogoWrapper,
 } from "./NavbarStyle.js";
+
 const Navbar = () => {
   return (
     <>
@@ -18,13 +22,20 @@ const Navbar = () => {
         <NavElement>
           <NavMenu>
             <MenuItem activeStyle>
-              <a href=""> Home </a>
-              <a href=""> Service </a>
-              <a href="">About me </a>
+              <LogoWrapper>
+                <img
+                  style={{ height: "50px", width: "50px" }}
+                  src={Logo}
+                  alt="logo"
+                />
+              </LogoWrapper>
+              <Link href="/"> Home </Link>{" "}
+              <Link href="/Service"> Service </Link>
+              <Link href="/about">About me </Link>
             </MenuItem>
-            <Call activeStyle>
+            <Call>
               <Number>
-                <IoMdCall style={{ color: "#fff" }} />
+                <IoMdCall style={{ color: "#000" }} />
                 <p> +919408341987 </p>
               </Number>
               <BUTTON>

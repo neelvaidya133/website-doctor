@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 // import { Button } from '../../Button';
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
@@ -28,9 +28,18 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <Link to="/about">About Us</Link>
-            <Link to="/service">Service</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link
+              activeClass="active"
+              className="test1"
+              to="About"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Test 1
+            </Link>
+            <Link href="/service">Service</Link>
+            <Link href="/contact">Contact Us</Link>
           </div>
         </div>
         <div className="footer-link-wrapper"></div>

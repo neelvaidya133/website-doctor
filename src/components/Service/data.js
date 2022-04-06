@@ -1,5 +1,5 @@
 export const serviceObjOne = {
-  img: require("../../assets/jojo.png"),
+  img: require("../Assets/undraw_Complete_design_re_h75h.png"),
   imgStart: "",
   heading1: "Hi,I am Hansolo.",
   subtittle1:

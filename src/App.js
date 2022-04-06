@@ -8,28 +8,24 @@ import Navbar from "./components/Navbar/Nav";
 import ServicePage from "./components/Service/index";
 import { serviceObjOne } from "./components/Service/data";
 import About from "./components/About/About";
-
+import Feedback from "./components/Feedback/Feedback";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <InfoSection {...homeObjOne} />
-      <h1
-        style={{
-          fontWeight: "bold",
-          color: "#3290d7",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        Service
-      </h1>
+      <Home />
       <ServicePage {...serviceObjOne} />
-
       <About />
+      {/* <Feedback /> */}
       <Footer />
+
+      {/* <Routes>
+        <Route path="/" element={<InfoSection {...homeObjOne} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<ServicePage {...serviceObjOne} />} />
+      </Routes> */}
     </>
   );
 }
